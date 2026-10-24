@@ -1,4 +1,4 @@
- body {
+body {
     text-align: center;
     background-color: #283149;
   }
@@ -66,7 +66,64 @@
     text-align: center;
     margin: 10px;
     background-color: white;
+    background-size: cover;
+    background-position: center;
   }
 
 
-   
+  /* =====================================================
+     MEDIA QUERIES
+     The drums get smaller as the screen gets narrower.
+     ===================================================== */
+
+  /* Tablets and small laptops (900px wide or less) */
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 4.5em;
+    }
+
+    .drum {
+      width: 150px;
+      height: 150px;
+      font-size: 5rem;
+      line-height: 150px;
+    }
+  }
+
+  /* Phones (600px wide or less) */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3em;
+      margin-top: 8%;
+    }
+
+    .set {
+      margin: 8% auto;
+    }
+
+    .drum {
+      width: 100px;
+      height: 100px;
+      font-size: 3.5rem;
+      line-height: 100px;
+      border-width: 6px;
+      border-radius: 12px;
+      margin: 6px;
+    }
+  }
+
+  /* Small phones (380px wide or less) */
+  @media (max-width: 380px) {
+    h1 {
+      font-size: 2.4em;
+    }
+
+    .drum {
+      width: 80px;
+      height: 80px;
+      font-size: 2.8rem;
+      line-height: 80px;
+      border-width: 5px;
+      margin: 5px;
+    }
+  }
